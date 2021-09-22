@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;400&family=Simonetta&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", serif;
+
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  opacity: 0.8;
+  background-color: #ddd;
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 10px 60px;
+  display: flex;
+  align-items: center;
+  }
+  /* Style the topnav links */
+  .topnav a {
+    color: #000;
+  background: #ddd;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+  transition-property: background;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: rgb(97, 92, 92);
+    color: black;
+  }
+   .headers-topic .header h1{
+        color: #000;
+        font-size: 300%;
+        position: absolute;
+        left: 550px;
+        top: 80px;
+        letter-spacing: 3px;
+
+    }
+    .headers-topic .header img{
+      width: 30%;
+      height: 20%;
+     float: left;
+     margin-top: 10%;
+     margin-left: 5%;
+    }
+    .headers-topic {
+        width: 100%;
+        height: 1000px;
+        background-color: #ffffff;
+        background-size: cover;
+        background-position: center;
+      }
+      
+      .headers-topic .tagline h2 {
+        margin: 0px 100px;
+        max-width: 750px;
+        padding-top: 100px;
+        color: #000;
+        font-size: 40px;
+        font-weight: 800;
+        letter-spacing: 2px;
+        line-height: 60px;
+        margin-top: 3%;
+        margin-right: 42%;
+        float: right;
+      }
+      
+      .tagline .ptag {
+        max-width: 650px;
+        margin: 5px 100px;
+        padding: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 40px;
+        text-align: justify;
+        color: #000;
+        float: right;
+      
+      }
+      caption{
+        margin-top: 10px;
+        text-align: left;
+        margin-left: 25px;
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 50%;
+        margin: auto;
+        
+      }
+      
+      td, th {
+        border: 4px solid #ddd;
+        font-size: 20px;
+        text-align: right;
+        padding: 8px;
+      }
+      
+      .footer {
+        padding: 44px 28px;
+        text-align: center;
+        background: #ddd;
+      }
+      .footer{
+        padding: auto;
+      }
+      .media-icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 1%;
+      }
+      
+      .media-icons a{
+        position: relative;
+        color: #111;
+        font-size: 25px;
+        transition: 0.3s;
+        transition-property: transform;
+      }
+      
+      .media-icons a:not(:last-child){
+        margin-right: 60px;
+      }
+      
+      .media-icons a:hover{
+        transform: scale(1.5);
+      }
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+      .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+      }
+    }
+    
+    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }

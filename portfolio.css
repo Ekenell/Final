@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;400&family=Simonetta&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+  padding: 50px;
+  text-align: center;
+  background: #C8C6C6;
+}
+header h1{
+  outline-color: #000;  
+outline-style: double;
+outline-width: thick;
+}
+ /* Style the top navigation bar */
+ .topnav {
+  overflow: hidden;
+  opacity: 0.8;
+  background-color: #ddd;
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 10px 60px;
+  display: flex;
+  align-items: center;
+  }
+  /* Style the topnav links */
+  .topnav a {
+    color: #000;
+  background: #ddd;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+  transition-property: background;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: rgb(97, 92, 92);
+    color: black;
+  }
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .headers img{
+    width: 30%;
+    height: 30%;
+    float: right;
+    margin-right: 12%;
+    margin-top: 5%;
+  }
+  
+  .headers-topic {
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .headers-topic .tagline h2 {
+    margin: 0px 100px;
+    max-width: 750px;
+    padding-top: 100px;
+    color: #22577A;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 60px;
+    margin-bottom: 30px;
+    float: center;
+  }
+  
+  .headers-topic .tagline span {
+    color: #22577A;
+  }
+  
+  .tagline .ptag {
+    max-width: 650px;
+    margin: 15px 100px;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: justify;
+    margin-bottom: 50px;
+    color: #283747;
+    background-color:rgba(194, 224, 221, 0.548);
+    border-radius: 30px;
+    float: center;
+  }
+  
+  .footer {
+    padding: 44px 28px;
+    text-align: center;
+    background: #ddd;
+  }
+  .media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .media-icons a{
+    position: relative;
+    color: #111;
+    font-size: 25px;
+    transition: 0.3s;
+    transition-property: transform;
+  }
+  
+  .media-icons a:not(:last-child){
+    margin-right: 60px;
+  }
+  
+  .media-icons a:hover{
+    transform: scale(1.5);
+  }
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
